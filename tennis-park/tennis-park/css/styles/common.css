@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Aclonica', sans-serif;
+}
+
+.container {
+  max-width: 1295px;
+  width: 90%;
+  margin: auto;
+}
+
+.main {
+  padding: 85px 0;
+}

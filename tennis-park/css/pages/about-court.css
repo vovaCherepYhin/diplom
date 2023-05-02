@@ -1,0 +1,266 @@
+.header {
+  width: 100%;
+  height: 265px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), no-repeat center/cover url("../../img/common/background-1.jpg");
+}
+
+.header__title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 63px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 60px;
+}
+
+.about__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #333333;
+  margin-bottom: 60px;
+}
+
+.about__club {
+  margin-bottom: 100px;
+}
+
+.about__block {
+  display: flex;
+  align-items: center;
+}
+
+.about__block-img {
+  position: relative;
+  right: -50px;
+}
+
+.about__block-info {
+  padding: 60px 70px 60px 100px;
+  background: #3F6A3C;
+}
+
+.about__block-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #DDDCDC;
+  margin-bottom: 50px;
+}
+
+.about__block-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25em;
+  color: #DDDCDC;
+  margin-bottom: 50px;
+}
+
+.about__block-list-advantages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__block-item-advantage {
+  display: flex;
+  align-items: center;
+}
+
+.about__block-item-advantage span:first-child {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 73px;
+  font-weight: 700;
+  color: #CDFFC5;
+}
+
+.about__block-item-advantage span:last-child {
+  max-width: 120px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #DDDCDC;
+}
+
+.about__rules-accordion .accordion {
+  width: 100%;
+  padding: 18px;
+  font-size: 15px;
+  text-align: left;
+  color: #444;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.about__rules-accordion .active,
+.about__rules-accordion .accordion:hover {
+  background-color: #ccc;
+}
+
+.about__rules-accordion .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: 700;
+  float: right;
+  margin-left: 5px;
+}
+
+.about__rules-accordion .active:after {
+  content: "\2212";
+}
+
+.about__rules-accordion .panel {
+  max-height: 0;
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.about__rules-accordion .panel__list {
+  list-style: none;
+}
+
+.about__rules-accordion .panel__item {
+  padding-left: 15px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.about__rules-accordion .panel__item:first-child {
+  margin-top: 16px;
+}
+
+.about__rules-accordion .panel__item:before {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background: #8D86C9;
+  position: absolute;
+  top: 6px;
+  left: -15px;
+}
+
+.about__rules-accordion .panel__text {
+  margin: 16px 0;
+}
+
+.about__slider {
+  margin-bottom: 100px;
+}
+
+.about__buttons {
+  margin-bottom: 10px;
+}
+
+.about__slider button {
+  padding: 10px;
+  background: #3F6A3C;
+  border: none;
+}
+
+.about__slider button:hover {
+  background: #365634;
+}
+
+.about__slider .slider {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.about__slider .slider-line {
+  width: 1024px;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+@media (max-width: 1200px) {
+  .about__block {
+    flex-direction: column;
+  }
+
+  .about__block-img {
+    margin-bottom: 30px;
+    right: 0;
+  }
+
+  .about__block-info {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 670px) {
+  .header__title {
+    font-size: 40px;
+  }
+
+  .about__title {
+    font-size: 28px;
+  }
+
+  .about__block-img img {
+    width: 400px;
+  }
+
+  .about__block-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .about__block-list-advantages {
+    flex-direction: column;
+  }
+
+  .about__block-item-advantage {
+    width: 100%;
+  }
+
+  .about__block-item-advantage span:last-child {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__title {
+    font-size: 28px;
+  }
+
+  .about__block-img img {
+    width: 300px;
+  }
+
+  .about__block-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .about__block-description {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  .about__block-title {
+    font-size: 13px;
+  }
+}
